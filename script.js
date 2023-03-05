@@ -19,7 +19,7 @@ $(function () {
                             display += `<div class="card medium-card mb-3 mx-auto mr-5" style="width: 20rem;">`;
                             var src = item["thumbnail"]; // use thumbnail url
                             display += `  <span>
-                                            <img src="${src}" class="card-img-top" alt="Cover image">
+                                            <img src="${src}" class="card-img-top" loading="lazy" alt="Cover image">
                                           </span>`;
                             display += `  <div class="card-body">`;
                             display += `    <h5 class="card-title">${item.title}</h5>`;
