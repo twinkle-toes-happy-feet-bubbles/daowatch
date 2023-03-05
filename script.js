@@ -1,4 +1,32 @@
-
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyloadImages = document.querySelectorAll("img.lazy");    
+    var lazyloadThrottleTimeout;
+    
+    function lazyload () {
+      if(lazyloadThrottleTimeout) {
+        clearTimeout(lazyloadThrottleTimeout);
+      }    
+      
+      lazyloadThrottleTimeout = setTimeout(function() {
+          var scrollTop = window.pageYOffset;
+          lazyloadImages.forEach(function(img) {
+              if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+              }
+          });
+          if(lazyloadImages.length == 0) { 
+            document.removeEventListener("scroll", lazyload);
+            window.removeEventListener("resize", lazyload);
+            window.removeEventListener("orientationChange", lazyload);
+          }
+      }, 20);
+    }
+    
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+  });
         // contact https://chienhsiang-hung.github.io/ if you have any questions 
 
 $(function () {
@@ -19,7 +47,7 @@ $(function () {
                             display += `<div class="card medium-card mb-3 mx-auto mr-5" style="width: 20rem;">`;
                             var src = item["thumbnail"]; // use thumbnail url
                             display += `  <span>
-                                            <img src="${src}" class="card-img-top" loading="lazy" alt="Cover image">
+                                            <img data-src="${src}" class="card-img-top lazy" loading="lazy"  alt="Cover image">
                                           </span>`;
                             display += `  <div class="card-body">`;
                             display += `    <h5 class="card-title">${item.title}</h5>`;
@@ -35,7 +63,7 @@ $(function () {
                             display += `    <a href="${item.link}" target="_blank" class="btn btn-outline-success" >Read More</a>`;
                             display += `  </div>
                                         </div>`;
-                            return k < 4;
+                            return k < 10;
                         }
                     );
                     resolve($content.html(display));
@@ -72,3 +100,4 @@ $(function () {
     });
   
 });
+
