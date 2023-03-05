@@ -35,7 +35,7 @@ $(function () {
                             display += `    <a href="${item.link}" target="_blank" class="btn btn-outline-success" >Read More</a>`;
                             display += `  </div>
                                         </div>`;
-                            return k < 10;
+                            return k < 4;
                         }
                     );
                     resolve($content.html(display));
