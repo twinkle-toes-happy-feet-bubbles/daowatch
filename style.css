@@ -1,32 +1,130 @@
 
+        .tubeBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* aligns vertically */
+        }
 
-    .medium-card span {
-        padding: 8px 8px 8px 8px;
-    }
-    /* https://stackoverflow.com/questions/11552380/how-to-automatically-crop-and-center-an-image */
-    .medium-card span img {
-        width: 200px;
-        height: 200px;
-        object-fit: cover; /* https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
-        object-position: center; /* Center the image within the element */
-        min-height: 100%;
-        min-width: 100%;
-    }
+        .video {
+            display: none;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 1rem;
+            }
+        p#video-title {
+            font-weight: bold;
+            padding: 5px 4px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            display: block;
+            width: auto;
+            margin: 0 auto;
+            margin-bottom: 0; /* remove bottom margin */
+        }
+
+        img.latestImageEmbed {
+            padding-top: 20px; /* add some space between img and p */
+            padding-bottom: 30px; /* add some space between img and p */
+            width: 340px !important;
+            height: 240px !important;
+        }
+
+        .latestImageEmbed {
+            border-radius: 4px;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .latestImageEmbed:hover .latestImageEmbed {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        #video-title {
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+            margin-bottom: 0;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .video:hover #video-title {
+            color: #cc0000;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #video-title {
+                width: 100%;
+            }
+        }
+
+#mainTitle{
+  text-align: center;
+  padding: 50px;
+}
+/*
+h2{
+  color: black;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+*/
+p{
+  color: blue;
+  text-align: center;
+}
+
+
+.subHead {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 200px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-family: 'Courier New', Courier, monospace;
+  color: blue;
+}
+
+.mainSplash{
+  background: linear-gradient(royalblue, blue);
+  color: white;
+  width: 100%;
+  height: 300px;
+}
+      
+.bookDiv {
+  display: flex;
+  justify-content: space-between;
+  background: aliceblue;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+}
+
+.left img {
+  display: block;
+  margin: 0 auto;
+  padding: 30px;
+  padding-left: 100px;
+  border-top: 3px solid blue;
+  border-bottom: 3px solid blue;
+  border-left: 6px solid blue;
+}
+
+.top-right, .bottom-right {
+  width: 50%;
+  text-align: center;
+}
+
     
-    #pagin {
-      display: flex;
-      justify-content: center;
-    }
-    /* https://www.w3schools.com/howto/howto_css_pagination.asp */
-    #pagin a {
-      color: black;
-      float: left;
-      padding: 8px 16px;
-      text-decoration: none;
-      transition: background-color .3s;
-    }
-    #pagin a.active {
-      background-color: dodgerblue;
-      color: white;
-    }
-    #pagin a:hover:not(.active) {background-color: #ddd;}
