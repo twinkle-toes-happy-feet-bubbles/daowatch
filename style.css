@@ -200,3 +200,10 @@ height: 300px;
 .jumbotron{
   margin-top: 3rem;
 }
+
+.black{
+  background: white;
+  color: black;
+  font-weight: 500;
+  font-style: oblique;
+}
