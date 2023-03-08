@@ -209,7 +209,7 @@ mediumPromise.then(function()
       var link = data.items[imageNumber].link;
       var title=data.items[imageNumber].title;
       id = link.substr(link.indexOf("=") + 1);
-      imgframe.setAttribute("src", "http://i1.ytimg.com/vi/" + id + "/sddefault.jpg");//http://i1.ytimg.com/vi/<insert-YouTube -video-id-here>/[Thumnail-Size].jpg
+      imgframe.setAttribute("src", "https://i1.ytimg.com/vi/" + id + "/sddefault.jpg");//http://i1.ytimg.com/vi/<insert-YouTube -video-id-here>/[Thumnail-Size].jpg
       imgframe.parentElement.querySelector("#video-title").innerText = title;
     }
   );
