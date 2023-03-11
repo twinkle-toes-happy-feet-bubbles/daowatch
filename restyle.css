@@ -1,0 +1,105 @@
+.card-title a{
+  color: hotpink;
+}
+
+.card-body p{
+  border: none;
+  color: #212121;
+}
+
+.card-body a{
+  color: hotpink;
+  border: none;
+}
+
+
+
+
+
+.row {
+  width: 100%;
+  text-align: center;
+}
+
+.columns {
+  width: 33%;
+  min-width: 280px;
+  vertical-align: top;/*Fix for different     height elements*/
+  margin-bottom: 10px;
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Yatra One', cursive;
+ }
+.align-right {
+  text-align: right;
+}
+@media screen and (max-width: 680px) {
+  .columns {
+    width: 100%; 
+  }
+}
+
+#medium h2{
+  color: hotpink;
+  font-family: 'Yatra One', cursive;
+}
+
+#medium p{
+  color: black;
+}
+
+hr.hr-1 {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.notmainSplash{
+  padding: 6px;
+  background: white;
+}
+
+#notmainTitle{
+  font-family:  'Yatra One', cursive;
+  color: hotpink;
+}
+
+.notmainSplash p{
+  color: #121212;
+}
+
+.top-right p{
+  color: black;
+}
+
+.top-right h2{
+  font-family:  'Yatra One', cursive;
+  color: hotpink;
+}
+
+
+#socioico{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: hotpink;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: blue;
+  color: white;
+}
