@@ -1,0 +1,20 @@
+.columns{
+    font-size: 30px;
+}
+
+@media (min-width: 601px) {
+    .columns{
+        font-size: 50px !important;
+      }
+}
+
+
+
+  .mainSplash{
+    max-height: 900px;
+  }
+  
+
+  #notmainTitle{
+    padding-top: 150px;
+  }
