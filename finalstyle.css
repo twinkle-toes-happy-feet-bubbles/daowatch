@@ -18,3 +18,21 @@
   #notmainTitle{
     padding-top: 150px;
   }
+
+  @media screen and (min-width: 2560px) and (max-width: 2560px) {
+    .bookDiv {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1290px; /* Set the max-width to half of the target screen size */
+    }
+  }
+
+  .bookDiv {
+    cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+  }
+  .tubeBox {
+    cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAMAAACeyVWkAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAEZJREFUeAGt0EEKgDAUA1En9z+0qEENhA+FvlUZQqE9Bnynlmlr2iVkSY66AHrg+MddSUiU6VuxqMhYquzcCvO6PZjhx5oTQ+8Bs3EshqIAAAAASUVORK5CYII=),auto;
+  }
+  .egg {	
+    cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAEdJREFUeAF90FEKgDAMwFDT+x9awYCRwjL282CM9joFsGie/swYy6oiENW8RaJ5PBvxvCpqxfwetTOqeyo+Rgx3JjnrCxNa3TwuAY6NyoMhAAAAAElFTkSuQmCC),auto;	
+  }
