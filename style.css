@@ -173,6 +173,11 @@ height: 100vh;
 
 /* Styles for tablets and small screens */
 @media screen and (max-width: 768px) {
+  
+  .mainSplash{
+    background: blue;
+  }
+  
   #mainTitle img{
     width:500px;
   }
